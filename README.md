@@ -18,48 +18,33 @@ User has to register user
 ## How It Works
 
 	1.	Register:
-        •	Enter a unique username and password on the registration page.
-        •	The user credentials are stored in localStorage.
+	        	Enter a unique username and password on the registration page.
+	        	The user credentials are stored in localStorage.
 	2.	Login:
-        •	Log in with the registered username and password.
-        •	If the credentials match, the user is logged in, and their session is stored in the app’s context.
+        		Log in with the registered username and password.
+        		If the credentials match, the user is logged in, and their session is stored in the app’s context.
 	3.	Dashboard:
-        •	Upon successful login, the user is redirected to the dashboard page.
-        •	If the user is not logged in and attempts to access the dashboard, they are redirected to the login page.
+        		Upon successful login, the user is redirected to the dashboard page.
+        		If the user is not logged in and attempts to access the dashboard, they are redirected to the login page.
 	4.	Logout:
-	    •	The user can log out to clear the session and return to the login page.
+	    		The user can log out to clear the session and return to the login page.
 
 ## Project Structer
-
-src/
-├── components/
-│   ├── LoginForm.js       # Contains the login form logic and UI
-│   ├── RegisterForm.js    # Contains the registration form logic and UI
-├── context/
-│   └── AuthContext.js     # Manages authentication state using React Context API
-├── pages/
-│   ├── LoginPage.js       # Login page that uses LoginForm
-│   ├── RegisterPage.js    # Registration page that uses RegisterForm
-│   ├── DashboardPage.js   # Plain dashboard page for logged-in users
-├── App.js                 # Application's root component
-├── index.js               # Entry point of the application
-└── styles.css             # Custom styles (optional)
-
+<img width="656" alt="image" src="https://github.com/user-attachments/assets/36231734-87ce-48c4-b09c-c6d71902d5ad">
 
 ## Installation and Setup
 
-	1.	Clone the repository:
+1.	Clone the repository:
         git clone https://github.com/vikashiiitb/login-register-dashboard.git
         cd login-register-dashboard
 
-
-    2.	Install dependencies:
+2.	Install dependencies:
         npm install
 
-    3.	Start the development server:
+3.	Start the development server:
         npm start
 
-    4.	Open your browser and navigate to:
+4.	Open your browser and navigate to:
         http://localhost:3000
 
 
