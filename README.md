@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Login-Register-Dashboard
+
+A basic React application that demonstrates a simple authentication flow with a Login, Register, and Dashboard page. This project uses localStorage to store user information and serves as a starter template for demos or learning purposes.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project uses [react-bootstrap](https://react-bootstrap.netlify.app). 
+User has to register user 
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+	•	User Registration: Users can register with a username and password. Registered users are stored in localStorage.
+	•	User Login: Registered users can log in using their credentials. Login authentication is handled with localStorage.
+	•	Dashboard: Once logged in, users are redirected to a plain dashboard page.
+	•	Protected Routes: The dashboard is accessible only for authenticated users.
+	•	React Bootstrap Styling: Pages are styled using React Bootstrap for a clean and responsive UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+	1.	Register:
+        •	Enter a unique username and password on the registration page.
+        •	The user credentials are stored in localStorage.
+	2.	Login:
+        •	Log in with the registered username and password.
+        •	If the credentials match, the user is logged in, and their session is stored in the app’s context.
+	3.	Dashboard:
+        •	Upon successful login, the user is redirected to the dashboard page.
+        •	If the user is not logged in and attempts to access the dashboard, they are redirected to the login page.
+	4.	Logout:
+	    •	The user can log out to clear the session and return to the login page.
 
-### `npm test`
+## Project Structer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/
+├── components/
+│   ├── LoginForm.js       # Contains the login form logic and UI
+│   ├── RegisterForm.js    # Contains the registration form logic and UI
+├── context/
+│   └── AuthContext.js     # Manages authentication state using React Context API
+├── pages/
+│   ├── LoginPage.js       # Login page that uses LoginForm
+│   ├── RegisterPage.js    # Registration page that uses RegisterForm
+│   ├── DashboardPage.js   # Plain dashboard page for logged-in users
+├── App.js                 # Application's root component
+├── index.js               # Entry point of the application
+└── styles.css             # Custom styles (optional)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+	1.	Clone the repository:
+        git clone https://github.com/vikashiiitb/login-register-dashboard.git
+        cd login-register-dashboard
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+    2.	Install dependencies:
+        npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    3.	Start the development server:
+        npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    4.	Open your browser and navigate to:
+        http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	•	React: Front-end library
+	•	React Router DOM: For routing and navigation
+	•	React Bootstrap: For styling
+	•	Bootstrap: CSS framework for responsive design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+	•	React: Front-end library
+	•	React Router DOM: For routing and navigation
+	•	React Bootstrap: For styling
+	•	Bootstrap: CSS framework for responsive design
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribution
 
-### Making a Progressive Web App
+Feel free to fork the repository, create new features, or report issues.
+	1.	Fork the project.
+	2.	Create a feature branch (git checkout -b feature-branch).
+	3.	Commit your changes (git commit -m "Add new feature").
+	4.	Push to your branch (git push origin feature-branch).
+	5.	Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is open source and available under the MIT License.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions, feel free to reach out:
+	•	Author: Vikash Kumar
+	•	Email: vikashiiitb@hotmail.com
+	•	GitHub: vikashiiitb
